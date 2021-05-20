@@ -3,7 +3,7 @@ geometry_msgs/PoseStamped pose_stamped
 float32 speed
 ---
 # Result definition
-int8 result
+bool success
 ---
 # Feedback definition
 int8 status
