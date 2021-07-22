@@ -11,7 +11,7 @@ geometry_msgs/PoseStamped ee_pose
 float64[] joint_poses
 float64[] joint_torques
 
-int32[6] cartesian_collision
-int32[6] cartesian_contact
+float64[6] cartesian_collision
+float64[6] cartesian_contact
 
 uint16 errors
