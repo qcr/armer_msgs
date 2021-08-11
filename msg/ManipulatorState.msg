@@ -7,8 +7,11 @@ uint16 LOCKED=32
 uint16 OTHER = 32768
 
 geometry_msgs/PoseStamped ee_pose
+geometry_msgs/TwistStamped ee_velocity
+geometry_msgs/WrenchStamped ee_wrench
 
 float64[] joint_poses
+float64[] joint_velocities
 float64[] joint_torques
 
 float64[6] cartesian_collision
