@@ -1,1 +1,1 @@
-float64[] joints
+float64[] joints # rad/s

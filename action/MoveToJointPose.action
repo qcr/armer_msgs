@@ -1,6 +1,6 @@
 # Goal definition
-float64[] joints
-float32 speed
+float64[] joints    # radians
+float32 speed       # m/s
 ---
 # Result definition
 bool success

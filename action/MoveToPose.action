@@ -1,6 +1,6 @@
 # Goal definition
 geometry_msgs/PoseStamped pose_stamped
-float32 speed
+float32 speed       # m/s
 ---
 # Result definition
 bool success
