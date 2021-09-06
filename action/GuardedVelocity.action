@@ -1,0 +1,8 @@
+geometry_msgs/TwistStamped twist_stamped
+armer_msgs/Guards guards
+---
+# Result definition
+uint8 triggered
+---
+# Feedback definition
+int8 status

@@ -10,6 +10,7 @@ find_package(catkin REQUIRED COMPONENTS message_generation actionlib_msgs geomet
 ## Generate messages in the 'msg' folder
 add_message_files(
   FILES
+  Guards.msg
   JointVelocity.msg
   ManipulatorState.msg
 )
@@ -29,6 +30,7 @@ add_service_files(
 ## Generate actions in the 'action' folder
 add_action_files(
   FILES
+  GuardedVelocity.action
   MoveToJointPose.action
   MoveToNamedPose.action
   MoveToPose.action
