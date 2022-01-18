@@ -1,9 +1,0 @@
-geometry_msgs/PoseStamped pose_stamped
-float32 gain
-float32 threshold
----
-# Result definition
-bool success
----
-# Feedback definition
-float64 feedback

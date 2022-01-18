@@ -13,6 +13,7 @@ add_message_files(
   Guards.msg
   JointVelocity.msg
   ManipulatorState.msg
+  ServoStamped.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -34,7 +35,6 @@ add_action_files(
   MoveToJointPose.action
   MoveToNamedPose.action
   MoveToPose.action
-  ServoToPose.action
 )
 
 ## Generate added messages and services with any dependencies listed here
