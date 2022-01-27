@@ -1,0 +1,7 @@
+float32 speed       # m/s
+---
+# Result definition
+bool success
+---
+# Feedback definition
+int8 status

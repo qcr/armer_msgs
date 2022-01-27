@@ -21,6 +21,7 @@ add_service_files(
   FILES
   AddNamedPose.srv
   AddNamedPoseConfig.srv
+  GetLinkName.srv
   GetNamedPoseConfigs.srv
   GetNamedPoses.srv
   RemoveNamedPose.srv
@@ -35,6 +36,7 @@ add_action_files(
   MoveToJointPose.action
   MoveToNamedPose.action
   MoveToPose.action
+  Home.action
 )
 
 ## Generate added messages and services with any dependencies listed here
