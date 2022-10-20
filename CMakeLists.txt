@@ -4,17 +4,24 @@ project(armer_msgs)
 MACRO(FIND_MESSAGES MESSAGE_FILES PATH_TYPE)
   SET(MESSAGE_FILES "")
   foreach (pattern IN ITEMS ${ARGN})
-    file(GLOB MESSAGE_PATHS ${pattern})
+    FILE(GLOB_RECURSE MESSAGE_PATHS  ${pattern})
     foreach(MESSAGE_PATH ${MESSAGE_PATHS})
       if (${PATH_TYPE} STREQUAL "RELATIVE_PATH")
-        cmake_path(RELATIVE_PATH MESSAGE_PATH OUTPUT_VARIABLE FILENAME)
+        STRING(REPLACE "${CMAKE_CURRENT_SOURCE_DIR}/" "" FILENAME ${MESSAGE_PATH})
       else()
-        cmake_path(GET MESSAGE_PATH ${PATH_TYPE} FILENAME)
+        GET_FILENAME_COMPONENT(FILENAME ${MESSAGE_PATH} NAME)
       endif()
-      list(APPEND MESSAGE_FILES ${FILENAME})
+      LIST(APPEND MESSAGE_FILES ${FILENAME})
     endforeach()
+    
   endforeach()
 ENDMACRO()
+
+# set(
+#   MESSAGE_FILES
+
+
+# )
 
 if($ENV{ROS_VERSION} STREQUAL "2")
   find_package(geometry_msgs REQUIRED)
