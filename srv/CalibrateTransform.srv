@@ -1,4 +1,4 @@
 string link_name
-geometry_msgs/Pose transform
+geometry_msgs/Transform transform
 ---
 bool success
