@@ -1,0 +1,4 @@
+string gripper
+string param
+---
+bool success
