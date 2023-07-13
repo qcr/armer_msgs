@@ -1,0 +1,10 @@
+# Goal definition
+string tracked_pose_topic
+bool linear_motion
+float32 vel_scale   # 0.0 - 1.0 scale of max gain (Linear) or max speed (Point-To-Point)
+---
+# Result definition
+bool success
+---
+# Feedback definition
+int8 status
