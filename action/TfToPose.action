@@ -1,0 +1,11 @@
+# Goal definition
+string ee_frame
+string target_tf
+string pose_topic
+float32 rate
+---
+# Result definition
+bool success
+---
+# Feedback definition
+int8 status
