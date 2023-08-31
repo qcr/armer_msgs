@@ -1,6 +1,8 @@
 # Goal definition
 geometry_msgs/PoseStamped pose_stamped
-float32 speed       # m/s
+bool linear_motion
+# TODO: refactor speed to vel_scale
+float32 speed   # 0.0 - 1.0 scale of max gain (Linear) or max speed (Point-To-Point)
 ---
 # Result definition
 bool success
