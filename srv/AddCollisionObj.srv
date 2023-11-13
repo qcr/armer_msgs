@@ -1,0 +1,6 @@
+# Name of collision object (for referencing as key within collision dictionary)
+string name
+# Type of collision object (temp at the moment, a way to specify Shape type -> available is [cylinder, mesh, sphere])
+string type 
+---
+bool success
