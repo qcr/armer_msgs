@@ -1,0 +1,14 @@
+# Name of collision object (for referencing as key within collision dictionary)
+string name
+# Type of collision object (temp at the moment, a way to specify Shape type -> available is [cylinder, mesh, sphere])
+string type 
+# Radius value (needed for sphere and cylinder objects)
+float32 radius 
+# Length value (needed for cylinder object)
+float32 length
+# Pose of collision object 
+geometry_msgs/Pose pose
+# Bool to overwrite an existing shape if already added
+bool overwrite
+---
+bool success
