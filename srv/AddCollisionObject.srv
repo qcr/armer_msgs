@@ -6,6 +6,10 @@ string type
 float32 radius 
 # Length value (needed for cylinder object)
 float32 length
+# Scale (x, y and z) (needed for cuboid/cube object)
+float32 scale_x
+float32 scale_y
+float32 scale_z
 # Pose of collision object 
 geometry_msgs/Pose pose
 # Bool to overwrite an existing shape if already added
