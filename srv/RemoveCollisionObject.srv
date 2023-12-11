@@ -1,0 +1,4 @@
+# Name of collision object (for referencing as key within collision dictionary)
+string name
+---
+bool success
