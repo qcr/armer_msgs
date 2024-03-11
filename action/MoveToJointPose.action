@@ -1,6 +1,7 @@
 # Goal definition
 float64[] joints    # radians
-float32 speed       # m/s
+# Alternative Control Paradigm (Time Based)
+float32 time    # in seconds
 ---
 # Result definition
 bool success
